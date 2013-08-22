@@ -24,11 +24,11 @@ include_recipe "mysql::server"
 include_recipe "database"
 include_recipe "database::mysql"
 
-database = node['piwik']['conf']['database']['dbname']
-database_user = node['piwik']['conf']['database']['username']
-database_password = node['piwik']['conf']['database']['password']
-database_host = node['piwik']['conf']['database']['host']
-database_port = node['piwik']['conf']['database']['port']
+database = node['piwik']['database']['dbname']
+database_user = node['piwik']['database']['username']
+database_password = node['piwik']['database']['password']
+database_host = node['piwik']['database']['host']
+database_port = node['piwik']['database']['port']
 database_connection = {
 	:host => database_host,
 	:port => database_port,
