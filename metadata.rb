@@ -9,7 +9,7 @@ version          "1.0.0"
 	supports os
 end
 
-%w{ mysql database php apache }.each do |ressource|
+%w{ mysql database php apache2 }.each do |ressource|
 	depends ressource
 end
 
